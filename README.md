@@ -2,17 +2,17 @@
 Разработчик: Горкин Всеволод, студент группы 23.М11 - ПУ
 
 ## Технологический стек
-ОС: Windows 10
+**ОС:** Windows 10
 
-Среда разработки: Pycharm Community Edition(2023.2.1), Jupyter Notebook
+**Среда разработки:** Pycharm Community Edition(2023.2.1), Jupyter Notebook
 
-Язык программирования: Python 3.10
+**Язык программирования:** Python 3.10
 
-GPU: Nvidia Geforce RTX 4070
+**GPU:** Nvidia Geforce RTX 4070
 
-Версия PyTorch: 2.7.0
+**Версия PyTorch:** 2.7.0
 
-Процессор PyTorch: Cuda
+**Процессор PyTorch:** Cuda
 
 **Используемые библиотеки языка Python:**
 
