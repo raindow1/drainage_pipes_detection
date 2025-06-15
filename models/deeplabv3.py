@@ -9,20 +9,20 @@ class DeepLabV3PlusResNet50(nn.Module):
         super(DeepLabV3PlusResNet50, self).__init__()
 
         # Инициализация предобученного ResNet50 в качестве энкодера
-        resnet50 = models.resnet50(pretrained=True)
+        resnet101 = models.resnet101(pretrained=True)
 
         # Переопределение слоев ResNet для удобства доступа
         self.layer0 = nn.Sequential(
-            resnet50.conv1,
-            resnet50.bn1,
-            resnet50.relu,
-            resnet50.maxpool
+            resnet101.conv1,
+            resnet101.bn1,
+            resnet101.relu,
+            resnet101.maxpool
         )
 
-        self.layer1 = resnet50.layer1
-        self.layer2 = resnet50.layer2
-        self.layer3 = resnet50.layer3
-        self.layer4 = resnet50.layer4
+        self.layer1 = resnet101.layer1
+        self.layer2 = resnet101.layer2
+        self.layer3 = resnet101.layer3
+        self.layer4 = resnet101.layer4
 
         # Модуль ASPP для обработки features высокого уровня
         self.aspp = ASPP(in_channels=2048, out_channels=256)
